@@ -7,7 +7,7 @@ def notifyme(title, message):
     notification.notify(
         title = title,
         message = message,
-        app_icon = "A:\\projects\\project_7\\icon.ico",
+        app_icon = "<ICON>", #Replace <ICON> with the path of icon you want to add with notification.
         timeout = 6
     )
 
