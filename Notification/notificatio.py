@@ -25,10 +25,11 @@ if __name__ == "__main__":
     for tr in soup.find_all('tbody')[0].find_all('tr'):
         mydatastr += tr.get_text()
 
-    states = ['Rajasthan']
+        
+    states = ['Rajasthan'] #if you want anyother state you can add it in List.
     mydatastr = mydatastr[1:]    
     itemlist = mydatastr.split("\n\n")
-    for item in itemlist[0:30]:
+    for item in itemlist[0:30]: # if you change the state you have to chane idexing accordingly.
         datalist = item.split("\n")
         if datalist[1] in states:
             print(datalist)
